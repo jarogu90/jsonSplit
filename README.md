@@ -7,7 +7,7 @@ Comandos de instalación:
 npm install fetch
 npm install throttled-queue
 ```
-Más Información: [nmpm Pages] (https://www.npmjs.com/package/fetch), (https://www.npmjs.com/package/throttled-queue)
+Más Información: [npm Pages] (https://www.npmjs.com/package/fetch), (https://www.npmjs.com/package/throttled-queue)
 
 #### Script: index1.js
 El script se ha desarrollado con la versión 12.X de nodejs y para que funcione es necesario instalar las librerías "node-fetch", "throttled-queue" y "yargs".
