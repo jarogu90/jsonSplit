@@ -27,7 +27,7 @@ const throttledQueue = require('throttled-queue');
           console.error('Error:', error);
           
           // BUSCO QUE EN CASO QUE SALTE UN ERROR, VUELVA A INTENTAR LA PETICIÓN HASTA 5 VECES O HASTA QUE RECIBA UNA RESPUESTA
-          /*let retries = 0;
+          let retries = 0;
           let retriesThrottle = throttledQueue(1, 30000);
           
           do{
@@ -46,9 +46,9 @@ const throttledQueue = require('throttled-queue');
               })
               .then(r => console.log('Success:', 'OK'+r));
             })
-          } while(retries <= 5 && !r)*/
+          } while(retries <= 5 && !r)
           
-          throw new error;
+          //throw new error;
         })
         .then(response => console.log('Success:', response));
       });
