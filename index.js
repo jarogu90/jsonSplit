@@ -16,7 +16,7 @@ const throttledQueue = require('throttled-queue');
 
     for(let i = 0; i < datos.length; i++) {
       throttle(function() {
-        fetch('https://search-pedidos-dev-4rtoq2jtrckjskj25rghj3t5fy.eu-west-1.es.amazonaws.com/data_group/_doc', {
+        fetch('https://search-pedidos-dev-4rtoq2jtrckjskj25rghj3t5fy.eu-west-1.es.amazonaws.com/data_retries/_doc', {
             method: 'POST',
             body: JSON.stringify(datos[i]),
             headers:{
